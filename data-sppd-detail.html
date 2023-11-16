@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Informasi</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+
+    <!-- header start -->
+    <header class="p-5 border-bottom">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold" href="#">SISTEM INFORMASI MONITORING SPPD</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="dashboard.html">Dashboard</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Kelola SPPD
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="data-sppd.html">Data SPPD</a></li>
+                                <li><a class="dropdown-item" href="data-sppd-buat-baru.html">Tambah</a></li>
+                                <li><a class="dropdown-item" href="data-sppd-rekapan.html">Rekapan</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div>
+                        <a href="index.html" class="btn btn-dark"> <i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- main start -->
+    <main class="p-5">
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-lg-6 mx-auto">
+
+                    <div class="mb-5">
+                        <h3>Data SPPD > Detail SPPD</h3>
+                        <p>Sistem Informasi Monitoring Surat Perintah Perjalanan Dinas (SPPD) Pemerintah Kabupaten Supiori.</p>
+                    </div>
+
+                    <!-- form start -->
+                    <form action="data-sppd.html">
+
+                        <div class="mb-3">
+                            <label for="" class="fw-bold">Nama Lengkap Pegawai</label>
+                            <p>Nama Lengkap</p>
+                        </div>
+                        <!-- input item end -->
+
+                        <div class="mb-3">
+                            <label for="" class="fw-bold">Keterangan</label>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde nostrum dolorem a cupiditate obcaecati voluptas.</p>
+                        </div>
+                        <!-- input item end -->
+
+                        <div class="mb-3">
+                            <label for="formFile" class="form-label fw-bold">Unggah Surat SPPD (PDF)</label>
+                            <div>
+                                <object width="400" height="500" type="application/pdf" data="./files/contoh-file-lppd-01.pdf">
+                                    <p>Insert your error message here, if the PDF cannot be displayed.</p>
+                                </object>
+                            </div>
+                          </div>
+                        <!-- input item end -->
+
+                        <div class="mb-3">
+                            <a href="data-sppd.html" class="btn btn-outline-dark">Kembali</a>
+                        </div>
+                        <!-- input item end -->
+
+                    </form>
+                    <!-- form end -->
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer start -->
+    <footer class="p-5 border-top">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <p>Copyright &copy; 2023 - All right reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
